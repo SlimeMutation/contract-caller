@@ -3,7 +3,7 @@ FACTORY_ABI_ARTIFACT := ./abis/DappLinkVRFFactory.sol/DappLinkVRFFactory.json
 
 
 contract-caller:
-	env GO111MODULE=on go build ./cmd/contract-caller
+	go build ./cmd/contract-caller
 
 clean:
 	rm contract-caller
